@@ -18,7 +18,7 @@ class loginModal extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.toggle} color="red">Modal</Button>
+        <Button onClick={this.toggle} color="red">로그인</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} side position="top-right" size="sm">
           <ModalHeader toggle={this.toggle}>로그인</ModalHeader>
           <ModalBody>
