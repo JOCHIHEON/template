@@ -7,13 +7,11 @@ import TablesPage from './pages/TablesPage';
 import MapsPage from './pages/MapsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import sideNavigation from './sideNavigation';
-import loginModal from './loginModal';
 
 class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route path='/modal' exact component={loginModal} />
         <Route path='/' exact component={mainPage} />
         <Route path='/side' exact component={sideNavigation} />
         <Route path='/dashboard' component={DashboardPage} />

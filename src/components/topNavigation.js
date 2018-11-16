@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem } from 'mdbreact';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact'
 import Navlogo from "../assets/navlogo.png";
-import loginModal from './loginModal';
+import Login from './loginModal';
+import Join from './joinModal';
 
 class TopNavigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapse: false,
-            modal: false
+            collapse: false
         };
     this.onClick = this.onClick.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -17,8 +17,7 @@ class TopNavigation extends Component {
 
     onClick(){
         this.setState({
-            collapse: !this.state.collapse,
-            loginModal: !this.state.modal
+            collapse: !this.state.collapse
         });
     }
 
@@ -31,7 +30,6 @@ class TopNavigation extends Component {
     render() {
         return (
             <div>     
-            <loginModal/>     
             <Navbar className="flexible-navbar" light expand="md" scrolling>
                 <NavbarBrand href="/">
                     <img src={Navlogo}/>
@@ -39,7 +37,6 @@ class TopNavigation extends Component {
             </Navbar>
             <Navbar className="flexible-navbar" light expand="md" scrolling>
                 <NavbarToggler onClick = { this.onClick } />
-                <Collapse isOpen = { this.state.collapse } navbar>
                 <NavbarNav left>
                         <NavItem>
                           <Dropdown>
@@ -115,8 +112,13 @@ class TopNavigation extends Component {
                             </DropdownMenu>
                           </Dropdown>
                         </NavItem>
+                        <NavItem>
+                            <Login/>
+                        </NavItem>
+                        <NavItem>
+                            <Join/>
+                        </NavItem>
                       </NavbarNav>
-                </Collapse>
             </Navbar>
             </div>
         );
