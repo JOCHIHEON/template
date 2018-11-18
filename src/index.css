@@ -51,8 +51,10 @@ main {
 
 #content{
   
-}    
-
+}   
+.navbar.navbar-light form .md-form input {
+  margin-left: auto;
+}
 
 .sidebar-fixed .logo-wrapper img{
   width: 100%;
@@ -164,7 +166,19 @@ main {
 .breadcrumb{
   margin: 0;
 }
-
+.boardbtn_all{
+  margin-right: 0;
+}
+.boardbtn_best{
+  margin-left: 0.3px;
+}
+.board-write{
+  margin-left: auto;
+}
+.fbd_tname{
+  margin: 0 auto;
+  padding: auto;
+}
 .activeClass .list-group-item {
   z-index: 5;
   color: #fff;
@@ -175,11 +189,13 @@ main {
 }
 
 .page-footer{
-  padding-right: 270px;
-  padding-left: 270px;
+  transition: padding-left 0.5s;
+  padding: 0 15%;
   background: #000000;
 }
-
+.mr-auto{
+  margin: 0 auto;
+}
 @media (max-width: 1199.98px) {
   .sidebar-fixed {
     display: none;
@@ -213,7 +229,3 @@ main {
     flex-direction: column;
   }
 }
-
-
-
-
