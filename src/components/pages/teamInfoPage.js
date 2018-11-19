@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from 'mdbreact';
-import FreeBoard from './board/FreeBoard';
+import FanBoard from './board/FanBoard';
 
-const mainFreeboard =  () => {
+const mainFanboard =  () => {
   return (
     <React.Fragment>
       <div>
         <main>                
-          <Container className="text-center">
-           <FreeBoard/>
+          <Container className="text-center">       
+           <FanBoard/>
           </Container>
         </main>
       </div>
@@ -16,4 +16,4 @@ const mainFreeboard =  () => {
   )
 }
 
-export default mainFreeboard;
+export default mainFanboard;

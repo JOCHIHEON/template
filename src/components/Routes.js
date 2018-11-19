@@ -12,7 +12,6 @@ import mainFreeboard from './pages/mainFreeboard';
 import mainFanboard from './pages/mainFanboard';
 import mainQnA from './pages/mainQnA';
 
-
 class Routes extends React.Component {
   render() {
     return (

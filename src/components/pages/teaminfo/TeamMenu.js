@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col } from 'mdbreact';
 import { Link } from 'react-router-dom';
 
 
@@ -21,7 +21,7 @@ const body = () => {
                     <Col><Link to = "/teamlist/teammenu/teammember">선수소개</Link></Col>
                     <Col><Link to = "/teamlist/teammenu/teamrecorde">팀내 선수 기록</Link></Col>
                 </Row>
-                    </div>
+            </div>
                   
 
 
