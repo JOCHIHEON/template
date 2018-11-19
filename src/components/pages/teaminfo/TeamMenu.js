@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Link, Route } from 'react-router-dom';
+import { Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +12,7 @@ const body = () => {
             <div>
                 <Row>   
                     <Col>
-                    <h2>원주 DB 프로미</h2>
+                    <h2>구단정보</h2>
                     </Col>
                 </Row>
                 <Row>
