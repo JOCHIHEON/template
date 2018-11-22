@@ -1,7 +1,6 @@
 <div class="g__rank">
     <h3 class="title_c">PLAYER RANKING</h3>
         <Row>
-        
             <Col>
                 <div class="desc_block">
                     <strong>득점</strong>
