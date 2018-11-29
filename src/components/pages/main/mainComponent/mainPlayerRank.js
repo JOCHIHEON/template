@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "mdbreact";
 
-const RankSection = () => {
+const MainPlayerRank = () => {
   return (
     <div class="p_rank">
       <h3 class="title_c">PLAYER RANKING</h3>
@@ -64,4 +64,4 @@ const RankSection = () => {
   );
 };
 
-export default RankSection;
+export default MainPlayerRank;

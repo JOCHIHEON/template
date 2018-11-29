@@ -11,7 +11,8 @@ import sideNavigation from "./sideNavigation";
 import mainFreeboard from "./pages/mainFreeboard";
 import mainFanboard from "./pages/mainFanboard";
 import mainQnA from "./pages/mainQnA";
-import mainPlayerRank from "./pages/main/mainComponent/mainPlayerRank";
+import mainPlayerRank from "./pages/main/mainComponent/MainPlayerRank";
+import MainSchedule from "./pages/MainSchedule";
 
 class Routes extends React.Component {
   render() {
@@ -31,6 +32,7 @@ class Routes extends React.Component {
         <Route path="/board/fan/9" component={mainFanboard} />
         <Route path="/board/fan/10" component={mainFanboard} />
         <Route path="/board/qna" exact component={mainQnA} />
+        <Route path="/schedule" componet={MainSchedule} />
         {/*
         <Route path="/board/free" component={FreeBoard}/>
         <Route path="/board/fan" component={FanBoard}/>

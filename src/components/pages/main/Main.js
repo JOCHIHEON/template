@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Iframe, Row, Col, Card, CardHeader, CardBody } from "mdbreact";
-import RankSection from "./mainComponent/mainPlayerRank";
-import BreadcrumSection from "../sections/BreadcrumSection";
+import { Iframe, Row, Col } from "mdbreact";
+import MainPlayerRank from "./mainComponent/MainPlayerRank";
 
 class Main extends Component {
   render() {
@@ -25,8 +24,7 @@ class Main extends Component {
             </Row>
             <Row>
               플레이어랭킹
-              <RankSection />
-              <BreadcrumSection />
+              <MainPlayerRank />
             </Row>
           </Col>
         </Row>
